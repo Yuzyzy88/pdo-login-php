@@ -1,5 +1,5 @@
 <?php
-include('dbcon.php');
+require_once('dbcon.php');
 session_start();
 if (!isset($_SESSION['username'])) {
     header('location:index.php');
